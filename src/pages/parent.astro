@@ -1,0 +1,10 @@
+---
+import Child from "../components/Child.astro";
+
+function myFunc() {
+  console.log("Passing this down to a child");
+  return "This is declared in the Parent and passed down to a child component";
+}
+---
+
+<Child functionToRun={myFunc} />
